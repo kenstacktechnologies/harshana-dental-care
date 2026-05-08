@@ -17,17 +17,25 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <meta name="keywords" content="dental care, cosmetic dentistry, dental implants, teeth whitening, invisible aligners, orthodontics, painless root canal, smile makeover, pediatric dentistry, TMJ disorder, Dindigul dentist" />
   <meta name="author" content="Harshana Dental Care" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#6C3FC5" />
+  <meta name="apple-mobile-web-app-title" content="Harshana Dental" />
 
-  
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Harshana Dental Care – Premium Dentistry" />
-  <meta property="og:description" content="Transform your smile with expert dental care. Cosmetic dentistry, implants, whitening & more." />
-  <meta property="og:image" content="assets/images/og-image.jpg" />
-  <meta property="og:url" content="https://harshanadentalcare.com" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="Harshana Dental Care" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="<?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Harshana Dental Care – Premium Dentistry'; ?>" />
+  <meta property="og:description" content="<?php echo isset($page_desc) ? htmlspecialchars($page_desc) : 'Transform your smile with expert dental care. Cosmetic dentistry, implants, whitening & more.'; ?>" />
+  <meta property="og:image" content="assets/images/logo.png" />
+  <meta property="og:url" content="https://www.harshanadental.com/<?php echo $current_page; ?>" />
 
-  
-  <link rel="canonical" href="https://harshanadentalcare.com/<?php echo $current_page; ?>" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Harshana Dental Care – Premium Dentistry'; ?>" />
+  <meta name="twitter:description" content="<?php echo isset($page_desc) ? htmlspecialchars($page_desc) : 'Transform your smile with expert dental care.'; ?>" />
+  <meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://www.harshanadental.com/<?php echo $current_page; ?>" />
 
   
   <link rel="icon" type="image/png" href="assets/images/logo.png">
