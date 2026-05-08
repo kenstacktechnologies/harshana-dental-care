@@ -26,14 +26,14 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="<?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Harshana Dental Care – Premium Dentistry'; ?>" />
   <meta property="og:description" content="<?php echo isset($page_desc) ? htmlspecialchars($page_desc) : 'Transform your smile with expert dental care. Cosmetic dentistry, implants, whitening & more.'; ?>" />
-  <meta property="og:image" content="assets/images/logo.png" />
+  <meta property="og:image" content="https://www.harshanadental.com/assets/images/logo.png" />
   <meta property="og:url" content="https://www.harshanadental.com/<?php echo $current_page; ?>" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="<?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Harshana Dental Care – Premium Dentistry'; ?>" />
   <meta name="twitter:description" content="<?php echo isset($page_desc) ? htmlspecialchars($page_desc) : 'Transform your smile with expert dental care.'; ?>" />
-  <meta name="twitter:image" content="assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://www.harshanadental.com/assets/images/logo.png" />
 
   <link rel="canonical" href="https://www.harshanadental.com/<?php echo $current_page; ?>" />
 
