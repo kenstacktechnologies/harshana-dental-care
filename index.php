@@ -113,8 +113,8 @@ include 'includes/header.php';
                     <p class="hero-v2-desc">Looking for a trusted dentist in Dindigul? Harshana Dental Care offers pain-free treatments, advanced dental care, and affordable services for a healthy smile.</p>
 
                     <div class="hero-cta-area">
-                        <a href="
-                            Book Consultation <i class="fa-solid fa-calendar-check"></i>
+                        <a href="contact.php" class="btn btn-primary btn-lg">
+                             Book Consultation <i class="fa-solid fa-calendar-check"></i>
                         </a>
                         <button class="btn btn-outline btn-lg" data-play-hero>
                             <i class="fa-solid fa-play"></i> Watch Video
@@ -145,21 +145,35 @@ include 'includes/header.php';
 
 <section class="about-section section" id="about">
     <div class="container">
-        <div class="about-grid">
-            <div class="about-visual">
-                <img src="assets/images/profile_pic.png" alt="Dr. Saranyan Mathivanan" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+        <div class="doctor-card">
+            <div class="doctor-img">
+                <img src="assets/images/profile_pic.png" alt="Dr. Saranyan Mathivanan – Founder & Lead Dentist">
             </div>
-            <div class="about-content">
-                <span class="eyebrow">Dr. Saranyan Mathivanan</span>
-                <h2 class="display-md">Trusted Dentist in Dindigul</h2>
-                <p style="font-size: 1.1rem; color: var(--text-body); line-height: 1.7; margin-bottom: 20px;">
-                    Dr. Saranyan Mathivanan is an experienced dentist in Dindigul providing quality dental care since 2009. Known for his gentle and pain-free approach, he ensures every patient feels comfortable and confident during treatment. At Harshana Dental Care, he uses advanced dental technology to deliver safe, precise, and effective results for all types of dental problems.
-                </p>
-                <p style="font-size: 1rem; color: var(--gray-dark); line-height: 1.7; margin-bottom: 30px;">
-                    Harshana Dental Care is a trusted dental clinic in Dindigul providing quality and affordable dental care. Led by Dr. Saranyan Mathivanan, an experienced dentist in Dindigul since 2009, we focus on safe, effective, and pain-free treatments for all patients.
-                </p>
-                <div class="about-actions">
-                    <a href="about.php" class="btn btn-primary">Learn More About Us</a>
+            <div class="doctor-content">
+                <span class="doctor-badge">Expert Dentist</span>
+                <h2>Dr. Saranyan Mathivanan</h2>
+                <p class="doctor-role">Founder & Chief Dental Surgeon</p>
+                <p class="doctor-bio">With over 15 years of clinical experience, Dr. Saranyan Mathivanan is recognized for his gentle approach and precision in complex dental procedures. Since establishing Harshana Dental Care in 2009, he has focused on bringing the latest dental technology to Dindigul, ensuring every patient receives painless and effective treatment.</p>
+                
+                <div class="doctor-stats">
+                    <div class="doc-stat-item">
+                        <div class="doc-stat-num">15+</div>
+                        <div class="doc-stat-label">Years Experience</div>
+                    </div>
+                    <div class="doc-stat-item">
+                        <div class="doc-stat-num">10k+</div>
+                        <div class="doc-stat-label">Happy Patients</div>
+                    </div>
+                    <div class="doc-stat-item">
+                        <div class="doc-stat-num">ISO</div>
+                        <div class="doc-stat-label">Certified Clinic</div>
+                    </div>
+                </div>
+
+                <div class="doctor-actions">
+                    <a href="about.php" class="btn btn-primary">
+                        <i class="fa-solid fa-circle-info"></i> Learn More About Us
+                    </a>
                 </div>
             </div>
         </div>
@@ -770,7 +784,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 });
 </script>
 
-<script src="assets/js/dotgrid.js"></script>
+<script src="assets/js/dotgrid.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const heroContainer = document.getElementById('heroDotGrid');

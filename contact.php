@@ -3,7 +3,7 @@ $page_title = "Contact Harshana Dental | Dindigul Clinic Location & Hours";
 $page_desc  = "Find the best dental clinic in Dindigul. Get directions, view our 24/7 operating hours, and connect with our expert team for your dental needs.";
 include 'includes/header.php';
 ?>
-<link rel="stylesheet" href="assets/css/contact.css" />
+<link rel="stylesheet" href="assets/css/contact.min.css" />
 
 <section class="contact-hero">
   <div class="container">

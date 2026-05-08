@@ -29,8 +29,7 @@
         
         <div class="footer-brand">
           <div class="footer-logo">
-            <div class="footer-logo-icon"><i class="fa-solid fa-tooth"></i></div>
-            <span class="footer-logo-name">Harshana</span>
+            <img src="assets/images/logo.png" alt="Harshana Dental Care" class="footer-logo-img" style="height: 50px; width: auto;">
           </div>
           <p class="footer-about">
             Harshana Dental Care is a leading dental clinic in Dindigul offering complete dental services including teeth cleaning, whitening, root canal, and dental implants. Visit a trusted dentist in Dindigul for quality care.
@@ -119,6 +118,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.min.js" defer></script>
 </body>
 </html>

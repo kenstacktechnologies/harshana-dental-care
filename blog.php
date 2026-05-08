@@ -115,7 +115,7 @@ $categories = [
   ['label'=>'Pediatric','slug'=>'pediatric','icon'=>'fa-solid fa-child','count'=>1],
 ];
 ?>
-<link rel="stylesheet" href="assets/css/blog.css" />
+<link rel="stylesheet" href="assets/css/blog.min.css" />
 
 
 <section class="blog-hero">

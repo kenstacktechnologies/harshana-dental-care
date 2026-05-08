@@ -9,6 +9,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 
   
   <title><?php echo isset($page_title) ? htmlspecialchars($page_title) : 'Best Dentist in Dindigul | Harshana Dental Care'; ?></title>
@@ -29,7 +30,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <link rel="canonical" href="https://harshanadentalcare.com/<?php echo $current_page; ?>" />
 
   
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +44,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <link rel="stylesheet" href="assets/css/style.css" />
 
   
-  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/index.min.css" />
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>

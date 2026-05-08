@@ -182,7 +182,7 @@ $all_services = [
     ],
 ];
 ?>
-<link rel="stylesheet" href="assets/css/services.css" />
+<link rel="stylesheet" href="assets/css/services.min.css" />
 
 <section class="services-hero">
   <div class="container">

@@ -3,7 +3,7 @@ $page_title = "About Dr. Saranyan Mathivanan | Best Dentist in Dindigul";
 $page_desc  = "Meet Dr. Saranyan Mathivanan, lead dentist at Harshana Dental Care. Providing expert, pain-free dental treatments in Dindigul since 2009.";
 include 'includes/header.php';
 ?>
-<link rel="stylesheet" href="assets/css/about.css" />
+<link rel="stylesheet" href="assets/css/about.min.css" />
 
 <section class="about-hero">
   <div class="container">
