@@ -21,6 +21,31 @@
 .about-hero-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
 .about-hero h1 span { color: var(--purple); }
 
+/* Section Titles & Headers */
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: var(--purple);
+  margin: 0 auto;
+  border-radius: var(--radius-full);
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* ---- Lead Dentist Section ---- */
 .doctor-section { padding: 100px 0; }
 .doctor-card {

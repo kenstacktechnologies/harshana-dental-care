@@ -145,6 +145,10 @@ include 'includes/header.php';
 
 <section class="about-section section" id="about">
     <div class="container">
+        <div class="section-header text-center" style="margin-bottom: 50px;">
+            <h2 class="section-title">Lead Dentist in Harshana</h2>
+            <div class="section-divider"></div>
+        </div>
         <div class="doctor-card">
             <div class="doctor-img">
                 <img src="assets/images/profile_pic.png" alt="Dr. Saranyan Mathivanan – Founder & Lead Dentist">
