@@ -457,13 +457,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // GALLERY LIGHTBOX
     // =====================================================
     function initGalleryLightbox() {
-        const items = document.querySelectorAll('.gallery-item[data-img]');
+        // Support both old and new gallery item classes
+        const items = document.querySelectorAll('.gallery-item, .bento-gallery-item');
         if (!items.length) return;
+        
+        // Check if lightbox already exists to avoid duplicates
+        if (document.getElementById('lightbox')) return;
 
         const lb = document.createElement('div');
         lb.innerHTML = `<div id="lightbox" style="position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:none;align-items:center;justify-content:center;backdrop-filter:blur(8px);">
-      <button id="lb-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.15);border:none;color:white;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;"><i class="fa-solid fa-xmark"></i></button>
-      <img id="lb-img" src="" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;" />
+      <button id="lb-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.15);border:none;color:white;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10001;"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lb-img" src="" style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;box-shadow: 0 20px 50px rgba(0,0,0,0.5);" />
     </div>`;
         document.body.appendChild(lb);
 
@@ -472,10 +476,22 @@ document.addEventListener('DOMContentLoaded', function () {
         const lbClose = document.getElementById('lb-close');
 
         items.forEach(item => {
+            // Make them clickable
+            item.style.cursor = 'pointer';
+            
             item.addEventListener('click', function () {
-                lbImg.src = this.dataset.img;
-                lightbox.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
+                // Try data-img first, then look for an inner img src
+                let imgSrc = this.dataset.img;
+                if (!imgSrc) {
+                    const innerImg = this.querySelector('img');
+                    if (innerImg) imgSrc = innerImg.src;
+                }
+                
+                if (imgSrc) {
+                    lbImg.src = imgSrc;
+                    lightbox.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
             });
         });
 

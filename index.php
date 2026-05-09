@@ -3,6 +3,7 @@ $page_title = "Best Dentist in Dindigul | Harshana Dental Care";
 $page_desc = "Looking for a trusted dentist in Dindigul? Harshana Dental Care offers pain-free treatments, advanced dental care, and affordable services for a healthy smile.";
 include 'includes/header.php';
 ?>
+<link rel="stylesheet" href="assets/css/gallery.css">
 
 
 <section id="hero-premium">
@@ -536,39 +537,81 @@ include 'includes/header.php';
 </section>
 
 
-<!-- <section class="gallery-section section" id="gallery">
+<section class="gallery-section section" id="gallery">
     <div class="container">
-        <div class="section-head text-center">
+        <div class="section-head text-center" style="margin-bottom: 60px;">
             <span class="eyebrow">Our Clinic</span>
             <h2 class="display-md">A Healing Space Designed<br>For Your Comfort</h2>
-            <p class="lead section-sub">Step inside our modern, state-of-the-art dental facility designed to make every
-                visit calm, comfortable and exceptional.</p>
+            <p class="lead section-sub">Step inside our modern, state-of-the-art dental facility designed to make every visit calm, comfortable and exceptional.</p>
         </div>
 
-        <div class="gallery-grid">
-            <?php
-            $gallery = [
-                ['src' => 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', 'label' => 'Modern Treatment Rooms'],
-                ['src' => 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', 'label' => 'Advanced Dental Equipment'],
-                ['src' => 'https://images.unsplash.com/photo-1670250492416-570b5b7343b1?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'label' => 'Comfortable Patient Care'],
-                ['src' => 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80', 'label' => 'Reception & Waiting Area'],
-                ['src' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80', 'label' => 'Sterilization Lab'],
-                ['src' => 'https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?w=600&q=80', 'label' => 'Expert Dental Team'],
-            ];
-            foreach ($gallery as $g): ?>
-                <div class="gallery-item" data-img="<?php echo $g['src']; ?>" role="button" tabindex="0"
-                    aria-label="View <?php echo $g['label']; ?>">
-                    <img src="<?php echo $g['src']; ?>" alt="<?php echo $g['label']; ?> – Harshana Dental Clinic"
-                        loading="lazy" />
-                    <div class="gallery-overlay">
-                        <div class="gallery-overlay-text"><i class="fa-solid fa-expand"></i> <?php echo $g['label']; ?>
-                        </div>
-                    </div>
+        <div class="bento-gallery-grid">
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-equipments.jpg" alt="Advanced Dental Equipments at Harshana Dental Care">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-microscope"></i>
+                    <span>Modern Equipment</span>
                 </div>
-            <?php endforeach; ?>
+            </div>
+            
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-clinic-img.jpg" alt="Harshana Dental Clinic Interior">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-clinic-medical"></i>
+                    <span>Our Clinic</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-clinic.jpg" alt="Treatment Room">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-chair-office"></i>
+                    <span>Treatment Room</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-treatment-room-2.jpg" alt="Treatment Room 2">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-chair-office"></i>
+                    <span>Treatment Room</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-location.jpg" alt="Clinic Location">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Easy to Locate</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-offie.jpg" alt="Office Area">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Consultation Area</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-reception.jpg" alt="Reception Desk">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Friendly Reception</span>
+                </div>
+            </div>
+
+            <div class="bento-gallery-item">
+                <img src="assets/images/gallery/harshana-dental-clinic-in-dindugul-safety.jpg" alt="Safety and Hygiene Standards">
+                <div class="bento-gallery-overlay">
+                    <i class="fa-solid fa-shield-virus"></i>
+                    <span>Safety First</span>
+                </div>
+            </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 <section class="consultation-section section" id="consultation">
